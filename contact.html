@@ -5,18 +5,38 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact</title>
+  <!--favicon-->      
   <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+<!--Bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<!--Bootstrap css-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<!--Bootstrap js-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer>
     </script>
+
+      <!-- LEAFLET -->
+  <!-- Standaard opmaak leaflet css-bestand-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""/>
+
+  <!-- leaflet.js javascript -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+            <!--Eigen css -->
 <link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/map.css">
+            <!--Eigen js-->
+            <script src="js/scripts.js" defer></script>
+            <script src="js/map-ap.js" defer></script>
+
     </head>
     <body class="d-flex flex-column">
-        <main class="flex-shrink-0">
             <nav class="navbar navbar-expand-lg bg-light container-fluid">
                 <a class="navbar-brand" href="index.html"><img src="assets/logo.png" alt="Trask" width="100" height="100">
                 </a>
@@ -37,9 +57,14 @@
                     </li>
                   </ul>
                   </div>
-              </nav>
-            <section class="container py-5 px-5">
+              </nav>       
+
+            <main class="flex-shrink-0">              
+              <section class="container py-5 px-5">
                 <article class="bg-light rounded-4 py-5 px-4 px-md-5 text-center">
+                    <section id="map" class="row">
+                        <div id="apMap" class="col-12 mb-3"></div>
+                    </section>
                     <span class="feature bg-blauw text-white rounded-3 mb-3">
                         <i class="bi bi-envelope"></i>
                     </span>
@@ -92,18 +117,17 @@
                                 type="submit">Versturen</button>
                     </form>
                 </article>
-            </section>            <section class="container bg-white py-0 mt-3">
+              </section> 
+            <section class="container bg-white py-0 mt-3">
                 <div class="d-flex justify-content-center fs-2 gap-4 mx-auto" style="max-width: 66.666667%;">
                     <a class="text-dark-blue" href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
                     <a class="text-dark-blue" href="https://linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
                     <a class="text-dark-blue" href="https://github.com/Craymiz" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
                 </div>
             </section>  
-        </main>          
+          </main>          
             <footer class="container bg-grey py-0 pb-2 mt-3 text-center">
                 <div class="h5 mb-0">&copy; Trask</div>
             </footer>
-            <!--JS-->
-        <script src="js/scripts.js"></script>
     </body>
 </html>
